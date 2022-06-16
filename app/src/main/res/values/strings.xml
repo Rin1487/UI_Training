@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">UI_Training</string>
+    <string name="HisName"><u>Dr. Oleg Mayami</u></string>
+    <string name="DentalSurgeon">Dental surgeon</string>
+    <string name="Youe">Your friendly Dental Friend</string>
+    <string name="Call">Make an appointment</string>
+    <string name="Email">oleg.mayami93@gmail.com</string>
+    <string name="URl">www.dental.com</string>
+    <string name="WhatsApp">WhatsApp Me</string>
+    <string name="SaveToPhonebook">Save to phonebook</string>
+    <string name="Place">Abdumomunova 146</string>
+    <string name="EmailImage">Email image</string>
+    <string name="URLImage">URL Image</string>
+    <string name="WhatsappImage">WhatsApp Image</string>
+    <string name="ContactImage">Contact Image</string>
+    <string name="LocationImage">Location Image</string>
+
+
+
+    
+</resources>
