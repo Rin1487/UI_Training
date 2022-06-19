@@ -20,8 +20,8 @@
 
     <ImageView
         android:id="@+id/portrait_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="98dp"
+        android:layout_height="106dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,7 +36,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/grayish"
-        android:text="@string/Call"
+        android:text="@string/MakeAnAppointment"
         android:textAllCaps="false"
         app:icon="@android:drawable/stat_sys_phone_call"
         app:iconGravity="textStart"
@@ -50,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="@string/Youe"
+        android:text="@string/YourFriendlyDentalFriend"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/portrait_image"
@@ -71,7 +71,7 @@
         android:id="@+id/name_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/HisName"
+        android:text="@string/DrOlegMayami"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/profession_text"
@@ -101,7 +101,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:contentDescription="@string/EmailImage"
-                app:srcCompat="@android:drawable/sym_action_email" />
+                app:srcCompat="@drawable/mail_ico" />
 
             <TextView
                 android:id="@+id/email_ttext"
@@ -129,7 +129,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:contentDescription="@string/URLImage"
-                app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
+                app:srcCompat="@drawable/web_icon" />
 
             <TextView
                 android:id="@+id/url_text"
@@ -156,7 +156,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:contentDescription="@string/ContactImage"
-                app:srcCompat="@android:drawable/sym_action_chat" />
+                app:srcCompat="@drawable/whatsapp___128___1_" />
 
             <TextView
                 android:id="@+id/whatsapp_text"
@@ -166,7 +166,7 @@
                 android:gravity="center_vertical"
                 android:paddingStart="8dp"
                 android:paddingEnd="8dp"
-                android:text="@string/WhatsApp"
+                android:text="@string/WhatsAppMe"
                 android:textSize="20sp"
                 android:textStyle="bold" />
         </TableRow>
@@ -183,7 +183,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:contentDescription="@string/ContactImage"
-                app:srcCompat="@android:drawable/sym_contact_card" />
+                app:srcCompat="@drawable/contacts_icon" />
 
             <TextView
                 android:id="@+id/contact_text"
@@ -209,7 +209,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:contentDescription="@string/LocationImage"
-                app:srcCompat="@android:drawable/ic_dialog_map" />
+                app:srcCompat="@drawable/location_icon" />
 
             <TextView
                 android:id="@+id/textView5"

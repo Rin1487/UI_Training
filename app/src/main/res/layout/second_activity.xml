@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pastel">
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:srcCompat="@drawable/logo" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="174dp"
+        android:background="@color/my_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/Portrait_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/confident_man_rounded" />
+
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/DrOlegMayami"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            app:layout_constraintBottom_toTopOf="@+id/dental_surgeon"
+            app:layout_constraintStart_toEndOf="@+id/Portrait_2"
+            app:layout_constraintTop_toTopOf="@+id/Portrait_2"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/dental_surgeon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/DentalSurgeon"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/Portrait_2"
+            app:layout_constraintStart_toStartOf="@+id/name_text"
+            app:layout_constraintTop_toBottomOf="@+id/name_text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/dental_clinic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/DentalClinic"
+        android:textColor="@color/my_purple"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/logo_image"
+        app:layout_constraintStart_toEndOf="@+id/logo_image"
+        app:layout_constraintTop_toTopOf="@+id/logo_image"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/your_friendly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/YourFriendlyDentalFriend"
+        app:layout_constraintStart_toStartOf="@+id/dental_clinic"
+        app:layout_constraintTop_toBottomOf="@+id/dental_clinic" />
+
+    <Button
+        android:id="@+id/email_us_button"
+        style="@style/MyButtonStyle"
+        android:layout_marginTop="24dp"
+        android:text="@string/EmailUs"
+        app:icon="@drawable/mail_ico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/whatsapp_button"
+        app:layout_constraintTop_toBottomOf="@+id/your_friendly" />
+
+    <Button
+        android:id="@+id/call_button"
+        style="@style/MyButtonStyle"
+        android:text="@string/ToCall"
+        app:icon="@android:drawable/stat_sys_phone_call"
+        app:layout_constraintBottom_toBottomOf="@+id/email_us_button"
+        app:layout_constraintEnd_toStartOf="@+id/whatsapp_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/whatsapp_button"
+        style="@style/MyButtonStyle"
+        android:text="@string/WhatsApp"
+        app:icon="@drawable/whatsapp___128___1_"
+        app:layout_constraintBottom_toBottomOf="@+id/email_us_button"
+        app:layout_constraintEnd_toStartOf="@+id/email_us_button"
+        app:layout_constraintStart_toEndOf="@+id/call_button" />
+
+    <Button
+        android:id="@+id/visit_website_button"
+        style="@style/MyButtonStyle"
+        android:text="@string/VisitWebsite"
+        app:icon="@drawable/web_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/save_contact_button"
+        app:layout_constraintEnd_toStartOf="@+id/telegram_buton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/telegram_buton"
+        style="@style/MyButtonStyle"
+        android:text="@string/Telegram"
+        app:icon="@drawable/telegram_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/save_contact_button"
+        app:layout_constraintEnd_toStartOf="@+id/save_contact_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/visit_website_button" />
+
+    <Button
+        android:id="@+id/save_contact_button"
+        style="@style/MyButtonStyle"
+        android:layout_marginTop="16dp"
+        android:text="@string/SaveContact"
+        app:icon="@drawable/contacts_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/telegram_buton"
+        app:layout_constraintTop_toBottomOf="@+id/email_us_button" />
+
+    <TextView
+        android:id="@+id/our_location_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/OurLocation"
+        android:textColor="@color/my_purple"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/adress_text"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/adress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/WeAreHere"
+        android:textColor="@color/my_purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/our_location_text"
+        app:layout_constraintTop_toBottomOf="@+id/visit_website_button" />
+
+    <TextView
+        android:id="@+id/open_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/open_map"
+        android:textColor="@color/my_purple"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/adress_text"
+        app:layout_constraintTop_toBottomOf="@+id/adress_text" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

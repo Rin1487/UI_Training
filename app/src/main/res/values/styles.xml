@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyButtonStyle">
+        <item name="android:layout_height">110dp</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/my_purple</item>
+        <item name="iconGravity">textTop</item>
+        <item name="iconTint">@color/my_purple</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+    </style>
+</resources>
