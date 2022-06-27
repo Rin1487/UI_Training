@@ -3,9 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Rin/AndroidStudioProjects/UI_Training/app/src/main/res/drawable/rect.xml" value="0.2185" />
+        <entry key="..\:/Users/Rin/AndroidStudioProjects/UI_Training/app/src/main/res/font/open_sans.xml" value="0.20243055555555556" />
         <entry key="..\:/Users/Rin/AndroidStudioProjects/UI_Training/app/src/main/res/layout-land/activity_main.xml" value="0.23236331569664903" />
-        <entry key="..\:/Users/Rin/AndroidStudioProjects/UI_Training/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Rin/AndroidStudioProjects/UI_Training/app/src/main/res/layout/activity_main.xml" value="0.12" />
         <entry key="..\:/Users/Rin/AndroidStudioProjects/UI_Training/app/src/main/res/layout/buisness_card_2.xml" value="0.264" />
+        <entry key="..\:/Users/Rin/AndroidStudioProjects/UI_Training/app/src/main/res/layout/first_card.xml" value="0.2" />
+        <entry key="..\:/Users/Rin/AndroidStudioProjects/UI_Training/app/src/main/res/layout/fragment_third_card.xml" value="0.2" />
+        <entry key="..\:/Users/Rin/AndroidStudioProjects/UI_Training/app/src/main/res/layout/fragment_title.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Rin/AndroidStudioProjects/UI_Training/app/src/main/res/layout/second_activity.xml" value="0.2" />
+        <entry key="..\:/Users/Rin/AndroidStudioProjects/UI_Training/app/src/main/res/layout/second_card.xml" value="0.176" />
+        <entry key="..\:/Users/Rin/AndroidStudioProjects/UI_Training/app/src/main/res/layout/third_card.xml" value="0.2" />
       </map>
     </option>
   </component>

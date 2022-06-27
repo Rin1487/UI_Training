@@ -17,15 +17,18 @@
     <string name="WeAreHere">Shopping center Asia Mall \n1st floor\u000D</string>
     <string name="EmailImage">Email image</string>
     <string name="URLImage">URL Image</string>
-    <string name="WhatsappImage">WhatsApp Image</string>
     <string name="ContactImage">Contact Image</string>
     <string name="LocationImage">Location Image</string>
     <string name="DentalClinic">Dental Clinic</string>
     <string name="ToCall">To Call</string>
     <string name="Telegram">Telegram</string>
-    <string name="open_map"><u>Open map</u></string>
+    <string name="open_map">Open map</string>
+    <string name="text">Text</string>
+    <string name="call">Call</string>
+    <string name="email">Email</string>
+    <string name="scan_to_connect">Scan to connect</string>
+    <string name="phone_number">+996 (774) 678 876</string>
 
 
 
-    
 </resources>

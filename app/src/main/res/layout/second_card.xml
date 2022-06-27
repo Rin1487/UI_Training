@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/pastel">
+    android:background="@color/pastel"
+    tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/logo_image"
@@ -42,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginBottom="8dp"
-            android:fontFamily="sans-serif-black"
+            android:fontFamily="@font/opensans"
             android:text="@string/DrOlegMayami"
             android:textColor="@color/white"
             android:textSize="26sp"
@@ -55,7 +56,7 @@
             android:id="@+id/dental_surgeon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-black"
+            android:fontFamily="@font/opensans"
             android:text="@string/DentalSurgeon"
             android:textColor="@color/white"
             android:textSize="18sp"
@@ -68,6 +69,7 @@
         android:id="@+id/dental_clinic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/halaney"
         android:text="@string/DentalClinic"
         android:textColor="@color/my_purple"
         android:textSize="20sp"
@@ -88,13 +90,14 @@
     <Button
         android:id="@+id/email_us_button"
         style="@style/MyButtonStyle"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="40dp"
         android:text="@string/EmailUs"
         app:icon="@drawable/mail_ico"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/whatsapp_button"
-        app:layout_constraintTop_toBottomOf="@+id/your_friendly" />
+        app:layout_constraintTop_toBottomOf="@+id/your_friendly"
+        android:onClick="onClickEmailMe"/>
 
     <Button
         android:id="@+id/call_button"
@@ -104,7 +107,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/email_us_button"
         app:layout_constraintEnd_toStartOf="@+id/whatsapp_button"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="onClickMakeAppointment"/>
 
     <Button
         android:id="@+id/whatsapp_button"
@@ -113,7 +117,8 @@
         app:icon="@drawable/whatsapp___128___1_"
         app:layout_constraintBottom_toBottomOf="@+id/email_us_button"
         app:layout_constraintEnd_toStartOf="@+id/email_us_button"
-        app:layout_constraintStart_toEndOf="@+id/call_button" />
+        app:layout_constraintStart_toEndOf="@+id/call_button"
+        android:onClick="onClickWhatsAppMe"/>
 
     <Button
         android:id="@+id/visit_website_button"
@@ -123,7 +128,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/save_contact_button"
         app:layout_constraintEnd_toStartOf="@+id/telegram_buton"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="onClickOpenWebpage" />
 
     <Button
         android:id="@+id/telegram_buton"
@@ -133,7 +139,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/save_contact_button"
         app:layout_constraintEnd_toStartOf="@+id/save_contact_button"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/visit_website_button" />
+        app:layout_constraintStart_toEndOf="@+id/visit_website_button"
+        android:onClick="onClickTelegram"/>
 
     <Button
         android:id="@+id/save_contact_button"
@@ -144,13 +151,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/telegram_buton"
-        app:layout_constraintTop_toBottomOf="@+id/email_us_button" />
+        app:layout_constraintTop_toBottomOf="@+id/email_us_button"
+        android:onClick="onClickSaveToPhonebook"/>
 
     <TextView
         android:id="@+id/our_location_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:fontFamily="@font/opensans"
         android:text="@string/OurLocation"
         android:textColor="@color/my_purple"
         android:textSize="18sp"
@@ -166,13 +175,16 @@
         android:textColor="@color/my_purple"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/our_location_text"
-        app:layout_constraintTop_toBottomOf="@+id/visit_website_button" />
+        app:layout_constraintTop_toBottomOf="@+id/visit_website_button"
+        app:layout_constraintVertical_bias="0.4" />
 
     <TextView
         android:id="@+id/open_map"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:fontFamily="@font/opensans"
+        android:onClick="onClickFindMeOnTheMap"
         android:text="@string/open_map"
         android:textColor="@color/my_purple"
         android:textStyle="bold"
